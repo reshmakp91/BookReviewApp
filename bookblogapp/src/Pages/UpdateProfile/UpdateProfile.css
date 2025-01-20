@@ -1,0 +1,167 @@
+
+.profileContainer {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form styling */
+.updateForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.updateForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Horizontal rule */
+.updateForm hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 10px;
+}
+
+.formGroup label {
+    margin: 10px 0;
+    width: 150px;
+    color: rgb(4, 4, 4);
+    font-size: 16px;
+}
+
+.formGroup input,
+.formGroup select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.updateButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(6, 106, 80);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 80px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.updateButton:hover {
+    background-color: #0056b3;
+}
+
+
+.successMessage {
+    color: #28a745;
+    background-color: #dff0d8;
+    padding: 10px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.errorMessage {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .profileContainer {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .formGroup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formGroup label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .formGroup input,
+    .formGroup select {
+        width: 100%;
+    }
+
+    .updateButton {
+        margin-left: 0;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profileContainer {
+        padding: 10px;
+        width: 85%;
+    }
+
+    .formGroup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formGroup label {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .formGroup input,
+    .formGroup select {
+        font-size: 14px;
+    }
+
+    .updateButton {
+        margin-left: 0;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .successMessage,
+    .errorMessage {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

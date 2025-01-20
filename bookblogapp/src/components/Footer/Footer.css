@@ -1,0 +1,41 @@
+.footer {
+    width : 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid;
+    margin: 0 auto 10px auto;
+}
+
+.footer p{
+    margin-top: 10px;
+    font-size: 14px;    
+    font-weight: 300;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        width: 90%; /* Increase width to accommodate smaller screens */
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .footer p {
+        font-size: 12px; /* Reduce font size for smaller screens */
+        text-align: center; /* Center-align the text */
+        padding: 5px; /* Reduce padding for better fit */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        width: 100%; /* Utilize full screen width for very small devices */
+        margin: 0 auto 5px auto; /* Adjust margin for compact spacing */
+    }
+
+    .footer p {
+        font-size: 10px; /* Further reduce font size */
+        padding: 3px; /* Minimize padding */
+    }
+}

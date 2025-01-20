@@ -1,0 +1,117 @@
+.register{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("https://images.ctfassets.net/3s5io6mnxfqz/p0iMWAqWk2KIqF5HOwpoq/3bf7bd1d1781041ceb1d202ed0358fab/AdobeStock_272072948.jpeg?w=1920");
+    background-size: cover;
+}
+.registerTitle{
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    color:azure;
+}
+.registerForm {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(248, 240, 240, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    
+}
+.registerForm label {
+    margin: 10px 0;
+    width: 150px;
+    color: rgb(4, 4, 4);
+    font-size: 16px;
+}
+.formGroup {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 10px;
+}
+.registerInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    flex: 1;
+}
+.registerButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .registerLoginButton {
+    margin-top: 10px;
+    margin-left: 3px;
+    background-color: rgb(9, 93, 93);
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+  }
+ form p{
+    color: white;
+    font-weight: bold;
+    
+  }
+
+  @media (max-width: 768px) {
+    .registerTitle {
+      font-size: 35px;
+    }
+  
+    .registerForm {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .registerButton,
+    .registerLoginButton {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .registerInput {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .registerTitle {
+      font-size: 30px;
+    }
+  
+    .registerForm {
+      padding: 10px;
+      width: 85%;
+    }
+  
+    .registerButton,
+    .registerLoginButton {
+      padding: 10px;
+      font-size: 13px;
+    }
+  
+    .registerInput {
+      padding: 8px;
+    }
+  
+    form p {
+      font-size: 12px;
+    }
+  }

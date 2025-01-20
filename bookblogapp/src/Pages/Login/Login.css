@@ -1,0 +1,104 @@
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("https://assets.entrepreneur.com/content/3x2/2000/20151006165136-introvert-reading-books-.jpeg");
+    background-size: cover;
+  }
+  
+  .loginTitle {
+    font-size: 50px;
+    
+  }
+  
+  .loginForm {
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(248, 240, 240, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .loginForm > label {
+    margin: 10px 0;
+  }
+  
+  .loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .loginInput:focus {
+    outline: none;
+  }
+  
+  .loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .loginRegisterButton {
+    margin-top: 10px;
+    margin-left: 3px;
+    background-color: rgb(9, 93, 93);
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+  }
+
+  /* Responsive Media Queries */
+@media (max-width: 768px) {
+  .loginTitle {
+    font-size: 40px; /* Reduce title size for smaller screens */
+  }
+
+  .loginForm {
+    max-width: 250px; /* Adjust form width */
+  }
+
+  .loginInput {
+    font-size: 13px; /* Adjust input font size */
+  }
+
+  .loginButton,
+  .loginRegisterButton {
+    font-size: 13px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .loginTitle {
+    font-size: 30px; /* Further reduce title size */
+  }
+
+  .loginForm {
+    max-width: 220px; /* Narrower form for small devices */
+  }
+
+  .loginInput {
+    font-size: 12px; /* Smaller font size for inputs */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .loginButton,
+  .loginRegisterButton {
+    font-size: 12px; /* Smaller button text */
+    padding: 8px; /* Adjust padding */
+  }
+}

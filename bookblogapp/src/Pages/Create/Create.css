@@ -1,0 +1,152 @@
+.write {
+    padding-top: 50px;
+  }
+  .writeGuide, .guideContent {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+  .writeGuide .link {
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #007bff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .writeGuide .link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .writeForm {
+    position: relative;
+  }
+  
+  .writeFormGroup {
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .writeIcon {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: rgb(129, 125, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .writeInput {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+  }
+  
+  .writeInput::placeholder {
+    color: rgb(189, 185, 185);
+    font-weight: 400;
+  }
+  
+  .writeInput:focus {
+    outline-style: none;
+  }
+  
+  .writeText {
+    width: 70vw;
+    height: 100vh;
+    font-family: inherit;
+    font-size: 20px;
+  }
+  
+  .writeSubmit {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .writeLoginMessage {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  .markdownPreview {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .markdownPreview h3 {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .writeInput {
+      font-size: 20px;
+      padding: 15px;
+    }
+  
+    .writeText {
+      font-size: 16px;
+      height: 50vh;
+    }
+  
+    .writeSubmit {
+      top: 15px;
+      right: 30px; /* Adjust position for smaller devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .writeGuide, .guideContent {
+      margin-left: 10px;
+    }
+  
+    .writeInput {
+      font-size: 18px;
+      padding: 10px;
+      width: 90vw; /* Full width for small screens */
+    }
+  
+    .writeText {
+      font-size: 14px;
+      height: 40vh;
+    }
+  
+    .writeSubmit {
+      top: 10px;
+      right: 20px;
+      font-size: 14px; /* Smaller button text */
+      padding: 8px; /* Reduce padding */
+    }
+  
+    .writeLoginMessage {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }

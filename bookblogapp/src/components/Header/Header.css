@@ -1,0 +1,75 @@
+.header {
+  position: relative;
+  font-family: "Lora", serif;
+}
+
+.headerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 25, 25, 0.5); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerTitles {
+  color: #fee2f0; 
+  text-align: center;
+}
+
+.headerTitleLg {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 120px;
+  margin-bottom: 10px;
+  
+}
+
+.headerTitleSm {
+  font-size: 25px;
+  font-style: italic;
+  
+}
+
+.headerImg {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .headerTitleLg {
+    font-size: 60px; /* Reduce large title font size for tablets */
+  }
+
+  .headerTitleSm {
+    font-size: 18px; /* Reduce subtitle font size */
+  }
+
+  .headerImg {
+    height: 250px; /* Decrease image height */
+  }
+}
+
+@media (max-width: 480px) {
+  .headerOverlay {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+
+  .headerTitleLg {
+    font-size: 40px; /* Further reduce title font size for mobile devices */
+  }
+
+  .headerTitleSm {
+    font-size: 14px; /* Adjust subtitle font size */
+  }
+
+  .headerImg {
+    height: 200px; /* Reduce image height for mobile */
+  }
+}

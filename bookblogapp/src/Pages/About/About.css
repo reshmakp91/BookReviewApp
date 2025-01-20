@@ -1,0 +1,65 @@
+.aboutme {
+    padding: 40px;
+    background-color: #f9f9f9; 
+    color: #333; 
+    font-family: 'Georgia', serif; 
+    line-height: 1.8; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 50px auto; 
+  }
+  
+  .aboutmetitle {
+    font-size: 32px; 
+    font-weight: 700;
+    color: #5a4a91; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+  }
+  
+  .aboutme p {
+    margin-bottom: 15px; 
+    text-align: justify; 
+    font-size: 18px; 
+  }
+  
+  .aboutme p:last-child {
+    margin-bottom: 0; 
+  }
+  
+  /* Responsive Adjustments */
+@media (max-width: 768px) {
+  .aboutme {
+    padding: 30px;
+    max-width: 90%; /* Reduce width for smaller devices */
+    margin: 30px auto;
+  }
+
+  .aboutmetitle {
+    font-size: 24px; /* Adjust title font size */
+    margin-bottom: 15px;
+  }
+
+  .aboutme p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme {
+    padding: 20px;
+    border-radius: 8px; /* Adjust corner radius for smaller devices */
+  }
+
+  .aboutmetitle {
+    font-size: 20px; /* Further reduce title font size */
+    margin-bottom: 10px;
+  }
+
+  .aboutme p {
+    font-size: 14px; /* Adjust paragraph font size */
+    margin-bottom: 10px; /* Adjust spacing between paragraphs */
+  }
+}

@@ -1,0 +1,20 @@
+.homePosts {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 768px) {
+    .homePosts {
+      flex-direction: column; 
+      gap: 15px; 
+      padding: 10px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .homePosts {
+      flex-direction: column;
+      gap: 10px; 
+      padding: 5px; 
+    }
+  }
