@@ -8,7 +8,9 @@ BookReviewApp is a **full-stack blog platform** where users can **post book revi
 - 💬 **Comment on Reviews** – Engage in discussions by commenting on reviews.  
 - 🔍 **Search Books & Reviews** – Easily find books and related reviews.  
 - 🔑 **User Authentication** – Secure login & registration system.  
-- 📖 **Pagination** – Browse content smoothly with paginated results.  
+- 👤 **Edit Profile** – Users can update their profile details.  
+- 📖 **Pagination** – Browse content smoothly with paginated results.
+
 
 ## 🛠 Tech Stack  
 
