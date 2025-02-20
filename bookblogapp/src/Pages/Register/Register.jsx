@@ -41,7 +41,6 @@ function Register() {
                 navigate("/Login");  
             } else {
                 setError(data.detail || "Registration failed!");
-
                 setSuccess(""); 
             }
         } catch (err) {
